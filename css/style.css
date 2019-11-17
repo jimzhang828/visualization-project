@@ -2,12 +2,6 @@
 @import url(font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
-/*
-	Transit by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 /* Basic */
 
 	body {
@@ -1031,7 +1025,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url(../images/dark_tint.png), url(../images/bokeh_car_lights_bg.jpg);
+		background-image: url(../images/dark_tint.png), url(../images/home.jpg);
 		background-position: center center;
 		background-size: cover;
 		color: #ffffff;
