@@ -19,7 +19,7 @@ function init() {
     var button = document.getElementById('but');
     button.onclick = function() {
         let query_statement = data_source + 'sheet=trends&headers=1&tq=';
-        query_statement += encodeURIComponent('SELECT A, B, C, D, E, F');
+        query_statement += encodeURIComponent('SELECT A, F, G, H, I');
         new google.visualization.Query(query_statement).send(handleTrendsQueryResponse);
     }
 }
