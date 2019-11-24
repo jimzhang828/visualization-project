@@ -1,4 +1,4 @@
-# # visulization-project
+# visulization-project
 
 ### 一、项目Git简单教程
 
