@@ -11,7 +11,7 @@
 		<script type="text/javascript" src="js/loader.js"></script> <!-- Google Charts -->
 <!--		<script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/handle.js"></script>
+		<!-- <script type="text/javascript" src="js/handle.js"></script> -->
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -79,14 +79,18 @@
 			</div>
 		</section>
 
-		<!-- <section class="wrapper style3 special" style="align-self: center">
+		<section class="wrapper style2 special" style="align-self: center">
 			<div class="container">
 				<header class="major">
-					<h2>Google Charts Demo</h2>
-					<p>demo demo demo demo</p>
+					<h2>Age distribution</h2>
 				</header>
+				<div class="row" style="padding-left: 10%;">
+					<div class="button" id="sort_age" style="margin-right: 5%;">Sort (ASC)</div>
+					<div class="button" id="sort_age_d" style="margin-right: 5%;">Sort (DESC)</div>
+					<div class="button" id="unsort_age">Sort (name)</div>
+				</div>
 				<div class="row">
-					<div id="career" style="width: 100%; height: 500px;"></div>
+					<div id="age" style="width: 100%; height: 500px;"></div>
 				</div>
 			</div>
 		</section>
@@ -94,25 +98,46 @@
 		<section class="wrapper style2 special" style="align-self: center">
 			<div class="container">
 				<header class="major">
-					<h2>Google Trends</h2>
+					<h2>Age distribution</h2>
 				</header>
 				<div class="row">
-					<button id="but">change</button>
-					<div id="trends" style="width: 100%; height: 500px;"></div>
+					<div id="age2" style="width: 100%; height: 500px;"></div>
 				</div>
 			</div>
 		</section>
 
-		<section class="wrapper style3 special" style="align-self: center">
+		<section class="wrapper style1 special" style="align-self: center">
+				<div class="container">
+					<header class="major">
+						<h2>Gender distribution</h2>
+					</header>
+					<div class="row">
+						<div id="gender" style="width: 100%; height: 500px;"></div>
+					</div>
+				</div>
+			</section>
+
+		<section class="wrapper style2 special" style="align-self: center">
 			<div class="container">
 				<header class="major">
-					<h2>Investigation</h2>
+					<h2>Education Background</h2>
 				</header>
 				<div class="row">
-					<div id="investigate" style="width: 100%; height: 400px;"></div>
+					<div id="education" style="width: 100%; height: 600px;"></div>
 				</div>
 			</div>
-		</section> -->
+		</section>
+
+		<section class="wrapper style1 special" style="align-self: center">
+			<div class="container">
+				<header class="major">
+					<h2>Investigation in HKU</h2>
+				</header>
+				<div class="row">
+					<div id="investigate" style="width: 100%; height: 750px;"></div>
+				</div>
+			</div>
+		</section>
 
 		<!-- Two -->
 		<section id="two" class="wrapper style2 special">
