@@ -934,7 +934,7 @@
 		}
 
 	#header {
-		background-color: #383b43;
+		background-color: #9B59B6 ;
 		color: #ffffff;
 		cursor: default;
 		font-size: 1.1em;
@@ -1025,7 +1025,8 @@
 /* Banner */
 
 	#banner {
-		background-image: url(../images/dark_tint.png), url(../images/home.jpg);
+		/* background-image: url(../images/dark_tint.png), url(../images/home.jpg); */
+		background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/home.jpg);
 		background-position: center center;
 		background-size: cover;
 		color: #ffffff;
@@ -1109,7 +1110,7 @@
 			}
 
 		.wrapper.style3 {
-			background-color: #3cadd4;
+			background-color: #9B59B6 ;
 			color: #ffffff;
 		}
 

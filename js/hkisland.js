@@ -16,12 +16,12 @@ function callback() {
 
 // 测试
 function init() {
-    var button = document.getElementById('but');
-    button.onclick = function() {
-        let query_statement = data_source + 'sheet=trends&headers=1&tq=';
-        query_statement += encodeURIComponent('SELECT A, F, G, H, I');
-        new google.visualization.Query(query_statement).send(handleTrendsQueryResponse);
-    }
+    // var button = document.getElementById('but');
+    // button.onclick = function() {
+    //     let query_statement = data_source + 'sheet=trends&headers=1&tq=';
+    //     query_statement += encodeURIComponent('SELECT A, F, G, H, I');
+    //     new google.visualization.Query(query_statement).send(handleTrendsQueryResponse);
+    // }
 }
 
 // 2. 画议员工作经历的图表
