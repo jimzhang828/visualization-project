@@ -26,7 +26,8 @@ function init() {
 
 // 2. 画议员工作经历的图表
 function drawCareer() {
-    // 拼接获取数据的query，选择career的sheet，header=1表示这个sheet的第一行是头部，=0表示没有头部
+    // 拼接获取数据的query
+    // 选择career的sheet，header=1表示这个sheet的第一行是头部，=0表示没有头部
     let query_statement = data_source + 'sheet=career&headers=1&tq=';
     const select_statement = 'SELECT * WHERE A = "Chan Tanya" OR A = "Hui Chi Fung" OR A = "Ip Lau Suk Yee Regina"';
     query_statement += encodeURIComponent(select_statement);
