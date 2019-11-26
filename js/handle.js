@@ -43,3 +43,4 @@ function handleInvestigateQueryResponse(response) {
     };
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+
