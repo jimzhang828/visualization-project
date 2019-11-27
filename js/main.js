@@ -9,7 +9,7 @@ function callback() {
     // 调用画图函数进行画图
     init();
     drawAge();
-    drawAgeHistogram();
+    // drawAgeHistogram();
     drawGender();
     drawEducation();
     drawInvestigate();
@@ -48,22 +48,22 @@ function handleAgeQueryResponse(response) {
     const options = {
         legend: {position: 'none'},
         hAxis: { minValue: 0 },
-        chartArea:{left:200,top:30,width:"100%",height:"100%"},
+        chartArea:{left:250,top:30,width:"70%",height:"90%"},
     };
     age_chart.draw(data, options);
 }
 // 年龄Histogram图
-function drawAgeHistogram() {
-    let query_statement = data_source + 'sheet=age&headers=1';
-    const query = new google.visualization.Query(query_statement);
-    query.send(handleAgeHistogramQueryResponse);
-}
-function handleAgeHistogramQueryResponse(response) {
-    const data = response.getDataTable();
-    data.setColumnProperties(2, {role: 'style'});
-    const chart = new google.visualization.Histogram(document.getElementById('age2'));
-    chart.draw(data);
-}
+// function drawAgeHistogram() {
+//     let query_statement = data_source + 'sheet=age&headers=1';
+//     const query = new google.visualization.Query(query_statement);
+//     query.send(handleAgeHistogramQueryResponse);
+// }
+// function handleAgeHistogramQueryResponse(response) {
+//     const data = response.getDataTable();
+//     data.setColumnProperties(2, {role: 'style'});
+//     const chart = new google.visualization.Histogram(document.getElementById('age2'));
+//     chart.draw(data);
+// }
 // 3. 画议员性别分布
 function drawGender() {
     let query_statement = data_source + 'sheet=gender&headers=1';
@@ -76,10 +76,11 @@ function handleGenderQueryResponse(response) {
     const chart = new google.visualization.PieChart(document.getElementById('gender'));
     const options = {
         title: 'Gender distribution of the candidates',
-        legend: 'none',
-        pieSliceText: 'label',
+        backgroundColor: '#F5F5F5',
+        // legend: 'none',
+        // pieSliceText: 'label',
         // pieStartAngle: 90,
-        chartArea:{width:"80%",height:"80%"},
+        chartArea:{width:"90%",height:"90%"},
     };
     chart.draw(data, options);
 }
@@ -98,12 +99,14 @@ function handleEducationQueryResponse(response) {
     const chart = new google.visualization.PieChart(document.getElementById('education'));
     const options = {
         title: 'Educational Background of the candidates',
+        backgroundColor: '#F5F5F5',
         // legend: 'none',
         // pieSliceText: 'label',
         // backgroundColor: '#9B59B6',
         pieStartAngle: 90,
         slices: {2: {offset: 0.05},},
         pieHole: 0.4,
+        chartArea:{width:"90%",height:"90%"},
     };
     chart.draw(data, options);
 }
@@ -152,6 +155,7 @@ function handleInvestigateQueryResponse(response) {
 		},
         // legend: {position: 'right'}
         chartArea:{left:100,top:80,width:"70%",height:"70%"},
+        sizeAxis: {minValue: 30, maxValue: 60},
     };
     chart.draw(data, options);
 }
