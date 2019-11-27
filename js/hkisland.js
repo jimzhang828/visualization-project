@@ -46,7 +46,7 @@ function drawGoogleTrends() {
 // 4. 画议员的支持率和认知度
 function drawInvestigate() {
     let query_statement = data_source + 'sheet=investigation&headers=1&tq=';
-    query_statement += encodeURIComponent('SELECT * LIMIT 4');
+    query_statement += encodeURIComponent('SELECT * WHERE A = "Chan Tanya" OR A = "Hui Chi Fung" OR A = "Ip Lau Suk Yee Regina" OR A = "Kwok Wai Keung"');
     new google.visualization.Query(query_statement).send(handleInvestigateQueryResponse);
 }
 

@@ -30,16 +30,20 @@ function handleInvestigateQueryResponse(response) {
     const data = response.getDataTable();
     const options = {
         bars: 'horizontal',
-        series: {
-            0: { axis: 'support' },
-            1: { axis: 'recognition' }
-        },
-        axes: {
-            x: {
-                recognition: {label: 'Recognition rate'},
-                support: {side: 'top', label: 'Support rate'}
-            }
-        }
+        // series: {
+        //     0: { axis: 'support' },
+        //     1: { axis: 'recognition' }
+        // },
+        // axes: {
+        //     x: {
+        //         recognition: {label: 'Recognition rate', maxValue: 1},
+        //         support: {side: 'top', label: 'Support rate', maxValue: 1}
+        //     }
+        // }
+        backgroundColor: '#F5F5F5',
+        bar: {groupWidth: "70%"},
+        maxValue: 1,
+        minValue: 0,
     };
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
