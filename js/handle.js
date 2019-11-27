@@ -29,16 +29,18 @@ function handleInvestigateQueryResponse(response) {
     const chart = new google.charts.Bar(document.getElementById('investigate'));
     const data = response.getDataTable();
     const options = {
+        bars: 'horizontal',
         series: {
-            0: { axis: 'Support' },
-            1: { axis: 'Recognition' }
+            0: { axis: 'support' },
+            1: { axis: 'recognition' }
         },
         axes: {
-            y: {
-                distance: {label: 'Support'},
-                brightness: {side: 'right', label: 'Recognition'}
+            x: {
+                recognition: {label: 'Recognition rate'},
+                support: {side: 'top', label: 'Support rate'}
             }
         }
     };
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+

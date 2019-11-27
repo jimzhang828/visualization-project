@@ -1,5 +1,4 @@
 // 数据来源
-const district = 'Kowloon West';
 const data_source = 'https://docs.google.com/spreadsheets/d/1vSVsn7Hyf5mxbvLWVqXuGEo-QbxDC5Uz_fnFmyufAEc/gviz/tq?';
 
 // 1. 加载时执行的动作，以及加载需要的图表package
@@ -16,12 +15,12 @@ function callback() {
 
 // 测试
 function init() {
-    var button = document.getElementById('but');
-    button.onclick = function() {
-        let query_statement = data_source + 'sheet=trends&headers=1&tq=';
-        query_statement += encodeURIComponent('SELECT A, F, G, H, I');
-        new google.visualization.Query(query_statement).send(handleTrendsQueryResponse);
-    }
+    // var button = document.getElementById('but');
+    // button.onclick = function() {
+    //     let query_statement = data_source + 'sheet=trends&headers=1&tq=';
+    //     query_statement += encodeURIComponent('SELECT A, F, G, H, I');
+    //     new google.visualization.Query(query_statement).send(handleTrendsQueryResponse);
+    // }
 }
 
 // 2. 画议员工作经历的图表
@@ -29,7 +28,7 @@ function drawCareer() {
     // 拼接获取数据的query
     // 选择career的sheet，header=1表示这个sheet的第一行是头部，=0表示没有头部
     let query_statement = data_source + 'sheet=career&headers=1&tq=';
-    const select_statement = 'SELECT * WHERE A = "Chan Tanya" OR A = "Hui Chi Fung" OR A = "Ip Lau Suk Yee Regina"';
+    const select_statement = 'SELECT * WHERE A = "Chan Tanya" OR A = "Hui Chi Fung" OR A = "Ip Lau Suk Yee Regina" OR A = "Kwok Wai Keung"';
     query_statement += encodeURIComponent(select_statement);
     // 创建一个Query对象并发送请求
     const query = new google.visualization.Query(query_statement);
