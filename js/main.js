@@ -134,6 +134,22 @@ function handleInvestigateQueryResponse(response) {
             minValue: 0.6, 
             maxValue: 1,
         }, 
+		//The bubble font
+		 bubble: {
+			 textStyle: {
+        		fontSize: 12,
+        		color: 'black',
+        		bold: true,
+        		italic: true,
+				auraColor: 'none',
+      					}
+    	},
+		//series set up the color
+		series: {'Pan-democracy camp': {color: '#F39C12'},
+				 'Pro-establishment camp':{color:'blue'},
+				 'Independent camp':{color:'grey'}
+				 
+		},
         // legend: {position: 'right'}
         chartArea:{left:100,top:80,width:"70%",height:"70%"},
     };
