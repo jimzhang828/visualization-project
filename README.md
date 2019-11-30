@@ -2,12 +2,12 @@
 
 ### 1. Structure
 
-1. Home page: [link](index.html)
-2. Hong Kong Island: [link](hkisland.html)
-3. Kowloon West: [link](klwest.html)
-4. Kowloon East: [link](kleast.html)
-5. New Territories West: [link](ntwest.html)
-6. New Territories East: [link](nteast.html)
+1. Home page: [link](https://jimzhang828.github.io/visualization-project/)
+2. Hong Kong Island: [link](https://jimzhang828.github.io/visualization-project/hkisland.html)
+3. Kowloon West: [link](https://jimzhang828.github.io/visualization-project/klwest.html)
+4. Kowloon East: [link](https://jimzhang828.github.io/visualization-project/kleast.html)
+5. New Territories West: [link](https://jimzhang828.github.io/visualization-project/ntwest.html)
+6. New Territories East: [link](https://jimzhang828.github.io/visualization-project/nteast.html)
 7. Report: [link](7507_project_final_report_1130.pdf)
 8. Data source: [link](https://docs.google.com/spreadsheets/d/1vSVsn7Hyf5mxbvLWVqXuGEo-QbxDC5Uz_fnFmyufAEc)
 
