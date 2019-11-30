@@ -1,6 +1,16 @@
 # visulization-project
 
-### 一、项目Git简单教程
+### 1. Structure
+
+1. Home page: [link](index.html)
+2. Hong Kong Island: [link](hkisland.html)
+3. Kowloon West: [link](klwest.html)
+4. Kowloon East: [link](kleast.html)
+5. New Territories West: [link](ntwest.html)
+6. New Territories East: [link](nteast.html)
+7. Report: [link](7507_project_final_report_1130.pdf)
+
+### 2. 项目Git简单教程
 
 #### 初始化工作
 
