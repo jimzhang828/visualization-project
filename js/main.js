@@ -104,7 +104,7 @@ function handleEducationQueryResponse(response) {
         // pieSliceText: 'label',
         // backgroundColor: '#9B59B6',
         pieStartAngle: 90,
-        slices: {2: {offset: 0.05},},
+        slices: {2: {offset: 0.15},},
         pieHole: 0.4,
         chartArea:{width:"90%",height:"90%"},
     };
@@ -127,6 +127,7 @@ function handleInvestigateQueryResponse(response) {
                 color: '#000'
             },
             format: 'percent',
+            // ticks: [0.43],
         }, 
         vAxis: {
             title: 'Recognition rate',
@@ -148,7 +149,7 @@ function handleInvestigateQueryResponse(response) {
       					}
     	},
 		//series set up the color
-		series: {'Pan-democracy camp': {color: '#F39C12'},
+		series: {'Pro-democracy camp': {color: '#F39C12'},
 				 'Pro-establishment camp':{color:'blue'},
 				 'Independent camp':{color:'grey'}
 				 
